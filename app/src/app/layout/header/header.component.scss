@@ -1,0 +1,27 @@
+@import "../../styles/color.variables.scss";
+
+nav {
+  background-color: $colors-gray2;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  > .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    @media screen and (min-width: 880) {
+      width: 880px;
+    }
+  }
+
+  & a {
+    color: $colors-gray11;
+
+    &:hover {
+      color: $colors-amber11;
+    }
+  }
+}
